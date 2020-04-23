@@ -1,0 +1,80 @@
+/* 配置に関する記述 */
+#box_left {
+    /* background: red; */
+    float: left;
+    width: 35vw;
+    height: 43vh;
+    text-align: left;
+
+    margin-bottom: 5vh;
+}@media screen and (max-width: 480px) {
+    #box_left{
+        width: 100vw;
+        height: 28vh;
+        margin-bottom: 0vh;
+    }
+}
+
+#box_right {
+    /* background: yellow; */
+    float: right;
+    width: 35vw;
+    height: 43vh;
+    text-align: left;
+
+    margin-bottom: 5vh;
+    margin-left: 3vw;
+}@media screen and (max-width: 480px) {
+    #box_right{
+        width: 100vw;
+        height: 28vh;
+        margin-bottom: 0vh;
+    }
+}
+
+
+#box_align_blank {
+    /* background: green; */
+    width: 1vw;
+    height: 12.7vh;
+}
+
+#box_align_blank_auth {
+    /* background: pink; */
+    width: 1vw;
+    height: 10vh;
+}
+
+/* p タグでクラスを指定することで，pタグ内を自動で改行 */
+p.b-break{
+    word-break: break-all;
+    font-size: 1vw;
+}@media screen and (max-width: 480px) {
+    p.b-break{
+        /* font-size: 1.2vw; */
+        font-size: 11px;
+    }
+}
+
+
+
+img.top_img_size{
+    max-width: 27vw;
+    height:auto;
+}
+
+
+/* formの表示に関する記述 */
+.custom_form input[type="text"] {
+	width: 200px;
+	-webkit-transition: width .3s;
+	transition: width .3s;
+}
+.custom_form input[type="text"]:focus {
+    width: 300px;
+    /* height: 100px; */
+}
+
+.custom_form input[type='button']{
+    text-align:center;
+}
