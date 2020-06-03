@@ -12,6 +12,11 @@ services:
     links:
       - mysql
       - php
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "3"
 
   php:
     build: ./docker/php73
@@ -24,6 +29,11 @@ services:
       - ./docker/laravel:/var/www/
     links:
       - mysql
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "3"
 
   mysql:
     build: ./docker/mysql80
